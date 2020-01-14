@@ -4,7 +4,7 @@
 #mount_point = "/mnt/<mount-name>",
 #extra_configs = {"<conf-key>":dbutils.secrets.get(scope = "<scope-name>", key = "<key-name>")})
 
-spark.conf.set("fs.azure.sas.container-for-data.storageacctsoumya.blob.core.windows.net","https://storageacctsoumya.blob.core.windows.net/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2020-01-13T23:11:32Z&st=2020-01-13T15:11:32Z&spr=https&sig=0bWRUtxMjd8gmv3Jgv6tpY79reYBj5aGDc99BDWaOXM%3D")
+spark.conf.set("fs.azure.sas.container-for-data.storageacctsoumya.blob.core.windows.net","https://storageacctsoumya.blob.core.windows.net/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2020-12-25T04:54:54Z&st=2020-01-14T20:54:54Z&spr=https&sig=GO%2FONqIoWgLYOzbPWzL%2FZCu0QnhmfCZSIGo5wRTsxcA%3D")
 
 
 
@@ -18,7 +18,6 @@ print("business_date = {}".format(cur_bus_date))
 
 
 # COMMAND ----------
-
 
 df_aba_path = "wasbs://container-for-data@storageacctsoumya.blob.core.windows.net/asis/sampledata/data_as_of_date={}/".format(cur_bus_date)
 
